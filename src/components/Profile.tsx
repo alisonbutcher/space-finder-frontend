@@ -32,7 +32,7 @@ export class Profile extends React.Component<ProfileProps, ProfileState> {
         for (const userAttribute of this.state.userAttributes) {
             rows.push(<tr key={userAttribute.Name}>
                 <td>{userAttribute.Name}</td>
-                <td>{userAttribute.Attribute}</td>
+                <td>{userAttribute.Value}</td>
             </tr>)
         }
         return <table>

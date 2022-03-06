@@ -6,7 +6,7 @@ interface SpaceComponentProps {
     spaceId: string
     name: string
     location: string
-    photoUrl?: string
+    photoURL?: string
     reserveSpace: (spaceId: string) => void
 }
 
@@ -15,8 +15,8 @@ export class SpaceComponent extends Component<SpaceComponentProps> {
     private genericImage = require('../../assets/generic-image.jpg');
 
     private renderImage(){
-        if(this.props.photoUrl) {
-            return <img src={this.props.photoUrl} alt='' />
+        if(this.props.photoURL) {
+            return <img src={this.props.photoURL} alt='' />
         } else {
             return <img src={this.genericImage} alt='' />
         }
